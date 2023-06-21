@@ -10,6 +10,10 @@ export default defineConfig({
             input: {
                 index: "./index.html",
                 ...getMapsScripts(maps),
+                configuration: "./configuration.html",
+                highscore: "./highscore.html",
+                displayVariable: "./displayVariable.html",
+                timer: "./timer.html",
             },
         },
     },
