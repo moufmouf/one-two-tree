@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Highscore</title>
+        <meta charset="utf-8"/>
+        <style>
+            body {
+                background-color: white;
+                margin: 0;
+                padding: 0;
+            }
+            h1 {
+                font-size: 10px;
+                text-align: center;
+            }
+            td {
+                font-size: 8px;
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+            td:first-child {
+                width: 75%;
+            }
+            td:nth-child(2) {
+                width: 25%;
+            }
+        </style>
+        <script src="https://play.workadventu.re/iframe_api.js"></script>
+        <script type="module" src="src/highscore.ts"></script>
+    </head>
+    <body>
+        <h1>🏆 Highscore 🏆</h1>
+        <div>
+            <table id="highscore">
+            </table>
+        </div>
+
+
+
+    </body>
+</html>

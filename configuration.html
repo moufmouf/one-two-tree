@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Configuration</title>
+        <style>
+            body {
+                background-color: white;
+            }
+        </style>
+        <script src="https://play.workadventu.re/iframe_api.js"></script>
+        <script type="module" src="src/configuration.ts"></script>
+    </head>
+    <body>
+        <h1>Configuration</h1>
+        <div>
+            <label for="question">Question:</label>
+            <textarea id="question" name="question" rows="10" cols="80"></textarea>
+        </div>
+        <div>
+            <label for="answer1">Answer 1:</label>
+            <input type="text" id="answer1" name="answer1"/>
+        </div>
+        <div>
+            <label for="answer2">Answer 2:</label>
+            <input type="text" id="answer2" name="answer2"/>
+        </div>
+        <div>
+            <label for="answer3">Answer 3:</label>
+            <input type="text" id="answer3" name="answer3"/>
+        </div>
+
+        <div>
+            <label for="correctAnswer">Correct answer:</label>
+            <select id="correctAnswer" name="correctAnswer">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <div>
+            <button id="submit">Start timer</button>
+        </div>
+    </body>
+</html>
