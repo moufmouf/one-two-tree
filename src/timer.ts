@@ -13,9 +13,9 @@ if (timer === null || question === null) {
 WA.onInit().then(() => {
     console.log('Timer / Scripting API ready');
 
-    const timerValue = WA.state.timer;
+    const timerValue = WA.state.timer as number;
 
-    let interval;
+    let interval : ReturnType<typeof setTimeout> | undefined;
     const numberFormat = new Intl.NumberFormat("en-US", {
         minimumFractionDigits: 1,
         maximumFractionDigits: 1,
